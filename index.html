@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101210">
+    <title>Fix Selector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <section class="password-screen" id="password-screen" aria-labelledby="password-title">
+      <div class="password-panel">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> PRIVATE ACCESS</p>
+        <h1 id="password-title">Enter Password</h1>
+        <form class="password-form" id="password-form">
+          <label class="visually-hidden" for="password-input">Password</label>
+          <input id="password-input" name="password" type="password" placeholder="Password" autocomplete="current-password" required autofocus>
+          <button class="fix-button" type="submit">Enter</button>
+          <p class="password-error" id="password-error" role="alert" hidden>Incorrect password</p>
+        </form>
+      </div>
+    </section>
+
+    <main class="page" id="site-content" hidden>
+      <header class="topbar">
+        <a class="wordmark" href="index.html" aria-label="BALLIN home">BALLIN<span>.</span></a>
+        <span class="topbar-label">WEB TOOL</span>
+      </header>
+
+      <section class="panel" aria-labelledby="page-title">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> SELECTOR TOOLS</p>
+        <h1 id="page-title">Fix Selector</h1>
+        <div class="actions">
+          <button class="fix-button" id="fix-button" type="button">Fix</button>
+          <a class="no-fix" href="https://classroomhaas.github.io/site">
+            <span>No Fix</span>
+            <small>less features</small>
+          </a>
+        </div>
+        <p class="action-status" id="action-status" role="status" aria-live="polite"></p>
+      </section>
+
+      <footer class="footer">BALLIN <span>·</span> SELECTOR</footer>
+    </main>
+  </body>
+</html>
